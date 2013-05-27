@@ -28,7 +28,7 @@ echo "DATABASE = pbx" >> /etc/odbc.ini
 echo -e "\e[1;31m  -  Installing VSN Asterisk Packages  -  \e[0m"
 yum -y install  make  gcc  gcc-c++  openssl-devel libtermcap-devel libxml2-devel sqlite-devel htop
 rpm -ivh http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
-yum -y install sox mpg123 lame
+yum -y install mpg123 lame
 
 echo -e "\e[1;31m  -  Installing Asterisk Core  -  \e[0m"
 wget ${ASTERISK}
