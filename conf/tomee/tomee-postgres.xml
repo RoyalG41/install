@@ -22,7 +22,7 @@
   IdleTimeout = 0 minutes
 </Container>
 
-<Resource id="security" type="DataSource">
+<Resource id="jdbc/security" type="DataSource">
   JdbcDriver org.postgresql.Driver
   JdbcUrl jdbc:postgresql://127.0.0.1/security
   UserName postgres
@@ -30,7 +30,7 @@
   JtaManaged true
 </Resource>
 
-<Resource id="pbx" type="DataSource">
+<Resource id="jdbc/pbx" type="DataSource">
   JdbcDriver org.postgresql.Driver
   JdbcUrl jdbc:postgresql://127.0.0.1/pbx
   UserName postgres
@@ -38,7 +38,7 @@
   JtaManaged true
 </Resource>
 
-<Resource id="billing" type="DataSource">
+<Resource id="jdbc/billing" type="DataSource">
   JdbcDriver org.postgresql.Driver
   JdbcUrl jdbc:postgresql://127.0.0.1/billing
   UserName postgres
@@ -46,7 +46,7 @@
   JtaManaged true
 </Resource>
 
-<Resource id="callcenter" type="DataSource">
+<Resource id="jdbc/callcenter" type="DataSource">
   JdbcDriver org.postgresql.Driver
   JdbcUrl jdbc:postgresql://127.0.0.1/callcenter
   UserName postgres
@@ -54,7 +54,7 @@
   JtaManaged true
 </Resource>
 
-<Resource id="Mail" type="javax.mail.Session">
+<Resource id="mail" type="javax.mail.Session">
    mail.smtp.host=smtp.gmail.com
    mail.smtp.starttls.enable=true
    mail.smtp.port=587

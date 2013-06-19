@@ -22,39 +22,39 @@
   IdleTimeout = 0 minutes
 </Container>
 
-<Resource id="security" type="DataSource">
+<Resource id="jdbc/security" type="DataSource">
   JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://127.0.0.1/security
+  JdbcUrl jdbc:mysql://db.virtualskynet.com/security
   UserName root
   Password p4ssw0rd
   JtaManaged true
 </Resource>
 
-<Resource id="pbx" type="DataSource">
+<Resource id="jdbc/pbx" type="DataSource">
   JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://127.0.0.1/pbx
+  JdbcUrl jdbc:mysql://db.virtualskynet.com/pbx
   UserName root
   Password p4ssw0rd
   JtaManaged true
 </Resource>
 
-<Resource id="billing" type="DataSource">
+<Resource id="jdbc/billing" type="DataSource">
   JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://127.0.0.1/billing
+  JdbcUrl jdbc:mysql://db.virtualskynet.com/billing
   UserName root
   Password p4ssw0rd
   JtaManaged true
 </Resource>
 
-<Resource id="callcenter" type="DataSource">
+<Resource id="jdbc/callcenter" type="DataSource">
   JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://127.0.0.1/callcenter
+  JdbcUrl jdbc:mysql://db.virtualskynet.com/callcenter
   UserName root
   Password p4ssw0rd
   JtaManaged true
 </Resource>
 
-<Resource id="Mail" type="javax.mail.Session">
+<Resource id="mail" type="javax.mail.Session">
    mail.smtp.host=smtp.gmail.com
    mail.smtp.starttls.enable=true
    mail.smtp.port=587
