@@ -57,3 +57,5 @@ cp aplication/*.war  /root/virtualskynet/webapps/
 
 echo -e "\033[33;31m --- Aplication Install ... Done! ---"
 init 6
+
+
