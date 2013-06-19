@@ -41,11 +41,12 @@ rm -rf  *.original  server.xml  tomee.xml  web.xml
 cd ..
 cd ..
 cp conf/tomee/*.xml virtualskynet/conf/
-cp conf/tomee/lib/*  virtualskynet/lib/
+cp conf/tomee/*.properties virtualskynet/conf/
+cp conf/lib/*  virtualskynet/lib/
 mv virtualskynet /root
 
 echo -e "\e[1;31m  -  Installing VirtualSkynet InitScripts  -  \e[0m"
-cp conf/tomee/service-virtualskynet  /etc/init.d/
+cp conf/tomee/virtualskynet  /etc/init.d/
 chmod 777 /etc/init.d/virtualskynet
 service virtualskynet start
 chkconfig virtualskynet on
