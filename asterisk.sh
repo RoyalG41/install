@@ -37,7 +37,7 @@ chkconfig sendmail on
 
 echo -e "\e[1;31m  -  Installing Asterisk Core  -  \e[0m"
 wget ${ASTERISK}
-tar xfz asterisk*
+tar xfz asterisk-*
 rm -rf *.tar.gz
 cd asterisk*
 ./configure
