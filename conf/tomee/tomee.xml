@@ -22,33 +22,9 @@
   IdleTimeout = 0 minutes
 </Container>
 
-<Resource id="jdbc/security" type="DataSource">
+<Resource id="jdbc/virtualskynet" type="DataSource">
   JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://db.virtualskynet.com/security
-  UserName root
-  Password p4ssw0rd
-  JtaManaged true
-</Resource>
-
-<Resource id="jdbc/pbx" type="DataSource">
-  JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://db.virtualskynet.com/pbx
-  UserName root
-  Password p4ssw0rd
-  JtaManaged true
-</Resource>
-
-<Resource id="jdbc/billing" type="DataSource">
-  JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://db.virtualskynet.com/billing
-  UserName root
-  Password p4ssw0rd
-  JtaManaged true
-</Resource>
-
-<Resource id="jdbc/callcenter" type="DataSource">
-  JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://db.virtualskynet.com/callcenter
+  JdbcUrl jdbc:mysql://db.virtualskynet.com/virtualskynet
   UserName root
   Password p4ssw0rd
   JtaManaged true
