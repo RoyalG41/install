@@ -15,14 +15,12 @@ echo -e "\e[1;31m  -  Instaling Up Database Server  -  \e[0m"
 yum -y install mysql mysql-server
 service mysqld start
 chkconfig mysqld on
-echo "bind-address=0.0.0.0" >> /etc/my.cnf
+#echo "bind-address=0.0.0.0" >> /etc/my.cnf
 echo "lower_case_table_names = 1" >> /etc/my.cnf
 mysql -e " DROP DATABASE TEST "
-mysql -e " CREATE DATABASE security "
-mysql -e " CREATE DATABASE pbx "
-mysql -e " CREATE DATABASE billing "
-mysql -e " CREATE DATABASE callcenter "
-mysql -e " GRANT ALL ON *.*  TO 'root'@'%'  IDENTIFIED BY '${PASSWORD}' "
+mysql -e " DROP DATABASE test "
+mysql -e " CREATE DATABASE virtualskynet "
+#mysql -e " GRANT ALL ON *.*  TO 'root'@'%'  IDENTIFIED BY '${PASSWORD}' "
 mysql -e " GRANT ALL ON *.*  TO 'root'@'localhost'  IDENTIFIED BY '${PASSWORD}' "
 
 

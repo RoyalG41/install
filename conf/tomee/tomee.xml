@@ -24,7 +24,7 @@
 
 <Resource id="jdbc/virtualskynet" type="DataSource">
   JdbcDriver com.mysql.jdbc.Driver
-  JdbcUrl jdbc:mysql://db.virtualskynet.com/virtualskynet
+  JdbcUrl jdbc:mysql://127.0.0.1/virtualskynet
   UserName root
   Password p4ssw0rd
   JtaManaged true

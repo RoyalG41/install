@@ -15,7 +15,6 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <!-- The mapping for the default servlet -->
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>/</url-pattern>
@@ -53,5 +52,4 @@
 		<param-value>blitzer</param-value>
 	</context-param>
 	
-   
 </web-app>
