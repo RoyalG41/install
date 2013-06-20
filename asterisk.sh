@@ -22,7 +22,7 @@ echo "SERVER = 127.0.0.1" >> /etc/odbc.ini
 echo "USER = root" >> /etc/odbc.ini
 echo "PASSWORD = ${PASSWORD}" >> /etc/odbc.ini
 echo "PORT = 3306" >> /etc/odbc.ini
-echo "DATABASE = pbx" >> /etc/odbc.ini
+echo "DATABASE = virtualskynet" >> /etc/odbc.ini
 
 
 echo -e "\e[1;31m  -  Installing VSN Asterisk Packages  -  \e[0m"
